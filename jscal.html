@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Calendar</title>
+<style>
+table {
+
+}
+width: 80%;
+border-collapse: collapse;
+margin: 0 auto;
+
+th,td {
+
+. }
+border: I px solid black;
+padding: l 5px;
+text-align: center;
+font-size: l 6px;
+
+th {
+background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<h2>Enter Year to Generate Calendar:</h2>
+<input type="number" id="yearinput">
+<button on click=" generateCalendar()">Generate Calendar</button>
+<h2 id="calendarYear">Calendar for <span id="displayYear"></span>
+</b2>
+<div id="calendar"></div>
+<script>
+function generateCalendarO {
+var year = document.getElementByld("yearlnput").value;
+var calendarYearHeading = document.getElementByld("calendarYear");
+calcndarYearHeading.textContent = "Calendar for " + year;
+var calendar = " < table > ";
+for (var month = 0; month < 12; month++) {
+calendar += " < tr >< th colspan = '7' > " + getMonthName(month) + 11 </th>< /tr>";
+calendar += 11
+
+< tr > < th > Sun < /th> < th > Mon < /th> < th > Tue< /th> < th > Wed <
+
+/th> < th > Thu < /th> < th > Fri < /th> < th > Sat < /th> < /tr> < tr > 11 ;
+var dayslnMonth = new Date(year, month + I, 0).getDateQ;
+var firstDay = new Date(year, month, I ).gctDay();
+for (var i = 0; i < firstDay; i++) {
+} calendar+- " < td > < /td>"; /
